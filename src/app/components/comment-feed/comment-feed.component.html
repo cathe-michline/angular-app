@@ -1,0 +1,19 @@
+<div class="comment-feed">
+    <button (click)="resetComments()" class="reset-button">Reset Comments</button>
+    <div class="add-comment">
+      <input [(ngModel)]="newCommentText" placeholder="Add a comment" class="comment-input">
+      <button (click)="addComment()" class="add-button">Add</button>
+    </div>
+  
+    <div class="search-comment">
+      <input (input)="search($event.target.value)" placeholder="Search comments" class="search-input">
+    </div>
+  
+    <ul>
+      <li *ngFor="let comment of comments" class="comment-item">
+        {{ comment.text }}
+        <button (click)="deleteComment(comment.id)" class="delete-button">Delete</button>
+      </li>
+    </ul>
+  </div>
+  

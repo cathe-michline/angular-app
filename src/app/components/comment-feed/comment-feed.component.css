@@ -1,0 +1,46 @@
+.comment-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh; 
+    box-sizing: border-box; 
+  }
+  
+  .add-comment, .search-comment {
+    margin-bottom: 20px;
+  }
+  
+  .comment-input, .search-input {
+    padding: 5px;
+    width: 300px; 
+  }
+  
+  .add-button, .delete-button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; 
+    max-width: 600px; 
+    border-radius: 5px;
+    border-width: 3px;
+  }
+  
+  .comment-item {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .reset-button {
+    margin: 10px;
+    color: red;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  
